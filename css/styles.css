@@ -1,0 +1,373 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Google Sans", sans-serif; 
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #1a1a1a;
+  margin-top: 150px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Navbar */
+header {
+  width: 100%;
+  height: 80px;
+  background: #1a1a1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+svg {
+  width: 20px;
+  height: 20px;
+  fill: #b5b5b5;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+}
+
+.nav-bar ul {
+  display: flex;
+}
+
+.nav-bar ul li a {
+  display: block;
+  color: #b5b5b5;
+  font-size: 15px;
+  padding: 10px 25px;
+  border-radius: 50px;
+  transition: 0.2s;
+  margin: 0 5px;
+}
+
+.nav-bar ul li a:hover {
+  color: rgb(189, 7, 7);
+}
+
+.nav-bar ul li a.active {
+  color: #11101b;
+  background: #fefefe;
+}
+
+/* A propos de moi */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #1a1a1a;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.part-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 50%;
+  color: #fff;
+  padding-left: 20px;
+}
+
+.part-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  padding-right: 0px;
+}
+
+.portrait {
+  height: 200px;
+  width: 175px;
+  border-radius: 50%;
+  border: 5px solid #f3eded;
+}
+
+.title-apropos {
+  color: #f3eded;
+  font-size: 70px;
+  text-align: left;
+  padding-left: 400px;
+  font-family: poppins;
+}
+
+.subtitle-apropos {
+  color: #f3eded;
+  font-size: 40px;
+  text-align: left;
+  padding-left: 400px;
+  padding-top: 30px;
+  font-family: poppins;
+}
+
+.text-apropos {
+  color: #c3bebe;
+  font-size: 17px;
+  text-align: justify;
+  padding-left: 400px;
+  padding-top: 30px;
+  padding-right: 400px;
+}
+
+.etude-apropos {
+  color: #c3bebe;
+  font-size: 20px;
+  text-align: left;
+  padding-left: 400px;
+  padding-top: 30px;
+  font-family: poppins;
+}
+
+.hr-apropos {
+  margin: 20px 400px; /* Adjust margin for more space if needed */
+  padding-top: 5px;
+  background-color: rgb(189, 7, 7);
+  border: none;
+  height: 1px;
+  border-radius: 10px;
+}
+
+.text-apropos-couleur {
+  color: rgb(189, 7, 7);
+}
+
+.title2-apropos {
+  color: #f3eded;
+  font-size: 40px;
+  text-align: left;
+  font-family: poppins;
+  padding-left: 400px;
+}
+
+/* Technologies */
+.title-techno {
+  color: #f3eded;
+  font-size: 40px;
+  text-align: left;
+  padding-top: 50px;
+  font-family: poppins;
+  padding-left: 400px;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-left: 370px;
+  padding-right: 300px;
+}
+
+.card {
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 15px;
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+}
+
+.card-icon img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+.card-title {
+  font-size: 1.5em;
+  margin: 0;
+  margin-bottom: 10px;
+  color: #f3eded;
+}
+
+.card-description {
+  font-size: 1em;
+  margin: 0;
+  margin-bottom: 15px;
+  color: #c3bebe;
+}
+
+.card-tags {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card-tags span {
+  background-color: #2a2a2a;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 5px 10px;
+  font-size: 0.85em;
+  color: rgb(189, 7, 7); /* Use different colors for different tags */
+}
+
+.card-tags span:hover {
+  background-color: rgb(189, 7, 7);
+  color: #2a2a2a;
+}
+
+/* Projets */
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 20px;
+  padding-left: 355px;
+  padding-right: 300px;
+}
+
+.projet-card {
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 15px;
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+}
+
+.projet-title {
+  font-size: 1.5em;
+  margin: 0;
+  margin-bottom: 10px;
+  color: #f3eded;
+}
+
+.projet-description {
+  font-size: 1em;
+  margin: 0;
+  margin-bottom: 15px;
+  color: #c3bebe;
+}
+
+.projet-link {
+  background-color: rgb(189, 7, 7);
+  border-radius: 5px;
+  margin: 5px;
+  padding: 5px 10px;
+  font-size: 0.85em;
+  color: #2a2a2a;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.projet-link:hover {
+  background-color: #2a2a2a;
+  color: rgb(189, 7, 7);
+}
+
+.img-projet {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+/* Contact */
+#contact {
+  padding: 50px 20px;
+  background-color: #1a1a1a;
+  color: #f3eded;
+}
+
+.contact-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-form .form-group {
+  margin-bottom: 15px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  color: #c3bebe;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #c3bebe;
+  border-radius: 5px;
+  background-color: #2a2a2a;
+  color: #fff;
+}
+
+.contact-form button {
+  background-color: rgb(189, 7, 7);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #2a2a2a;
+}
+
+.contact-details,
+
+.download-button {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.download-btn {
+  background-color: rgb(189, 7, 7);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1em;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.download-btn:hover {
+  background-color: #2a2a2a;
+  color: rgb(189, 7, 7);
+}
+.submit-btn {
+  background-color: rgb(189, 7, 7);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1em;
+  transition: background-color 0.3s, color 0.3s;
+}
+.submit-btn:hover {
+  background-color: #2a2a2a;
+  color: rgb(189, 7, 7);
+}
+
+/* Footer */
+footer {
+  background-color: #1a1a1a;
+  color: #f3eded;
+  padding: 20px;
+  text-align: center;
+  border: #11101b 1px solid;
+}
